@@ -36,9 +36,7 @@ Route::middleware('auth')->group(function () {
         return view('theme.stream');
     })->name('stream');
 
-    Route::get('/videos', function () {
-        return view('theme.videos');
-    })->name('videos');
+    Route::get('/cameras', [\App\Http\Controllers\CameraController::class,'index']);
 
     // create token for user
     Route::post('/tokens/create', function (Request $request) {

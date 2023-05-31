@@ -15,18 +15,22 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Fahril Refiandi',
-        //     'username' => 'fahril',
-        //     'password' => bcrypt('password'),
-        //     'remember_token' => \Illuminate\Support\Str::random(10),
-        // ]);
-
-        DB::table('users')->insert([
+        $user=\App\Models\User::create([
             'name' => 'Fahril Refiandi',
             'username' => 'fahril',
             'password' => bcrypt('password'),
             'remember_token' => \Illuminate\Support\Str::random(10),
         ]);
+
+        // $user=DB::table('users')->insert([
+        //     'name' => 'Fahril Refiandi',
+        //     'username' => 'fahril',
+        //     'password' => bcrypt('password'),
+        //     'remember_token' => \Illuminate\Support\Str::random(10),
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ]);
+        
+        $user->createToken('authToken');
     }
 }

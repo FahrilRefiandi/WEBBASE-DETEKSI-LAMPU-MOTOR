@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--favicon-->
-    <link rel="icon" href="{{ asset('theme') }}/assets/images/favicon-32x32.png" type="image/png" />
+    {{-- <link rel="icon" href="{{ asset('theme') }}/assets/images/favicon-32x32.png" type="image/png" /> --}}
     <!--plugins-->
     <link href="{{ asset('theme') }}/assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
-    <link href="{{ asset('theme') }}/assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+    {{-- <link href="{{ asset('theme') }}/assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" /> --}}
     <link href="{{ asset('theme') }}/assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
     <!-- loader-->
     <link href="{{ asset('theme') }}/assets/css/pace.min.css" rel="stylesheet" />
@@ -23,7 +23,7 @@
     <!-- Theme Style CSS -->
     <link rel="stylesheet" href="{{ asset('theme') }}/assets/css/dark-theme.css" />
     <link rel="stylesheet" href="{{ asset('theme') }}/assets/css/semi-dark.css" />
-    <link rel="stylesheet" href="{{ asset('theme') }}/assets/css/header-colors.css" />
+    {{-- <link rel="stylesheet" href="{{ asset('theme') }}/assets/css/header-colors.css" /> --}}
     <title>@yield('title')</title>
     @stack('css')
 </head>
@@ -240,7 +240,7 @@
     <script src="{{ asset('theme') }}/assets/js/jquery.min.js"></script>
     <script src="{{ asset('theme') }}/assets/plugins/simplebar/js/simplebar.min.js"></script>
     <script src="{{ asset('theme') }}/assets/plugins/metismenu/js/metisMenu.min.js"></script>
-    <script src="{{ asset('theme') }}/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+    {{-- <script src="{{ asset('theme') }}/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script> --}}
     <!--app JS-->
     <script src="{{ asset('theme') }}/assets/js/app.js"></script>
     @stack('js')

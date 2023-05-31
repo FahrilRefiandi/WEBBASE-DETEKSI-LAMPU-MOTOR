@@ -57,6 +57,9 @@ Route::middleware('token')->group(function () {
         );
     });
 
+    Route::get('/cameras',[\App\Http\Controllers\CameraController::class,'show'])->name('api.camera.show');
+    Route::post('/cameras',[\App\Http\Controllers\CameraController::class,'store'])->name('api.camera.store');
+
 
 
     Route::get('/video', function (Request $request) {

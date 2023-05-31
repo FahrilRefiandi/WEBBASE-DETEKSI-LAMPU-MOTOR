@@ -34,7 +34,7 @@
                                     <p class="msg-header-badge">8 New</p>
                                 </div>
                             </a>
-                            <div class="header-notifications-list">
+                            {{-- <div class="header-notifications-list">
                                 <a class="dropdown-item" href="javascript:;">
                                     <div class="d-flex align-items-center">
                                         <div class="user-online">
@@ -148,7 +148,7 @@
                                         </div>
                                     </div>
                                 </a>
-                            </div>
+                            </div> --}}
                             <a href="javascript:;">
                                 <div class="text-center msg-footer">
                                     <button class="btn btn-primary w-100">View All Notifications</button>
